@@ -1,53 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        /* Estilos CSS (puedes personalizarlos según tus preferencias) */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: red;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Reset de estilos para el body */
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-        #about img {
-        max-width: 150px; /* La imagen no será más ancha que su contenedor */
-        height: 150px; /* Esto mantiene la proporción original */
-        border-radius: 50%;
-        }
+    /* Estilos generales para los encabezados */
+    h1, h2 {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
 
-        p {
-            color: #666;
-        }
-    </style>
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para la sección de inicio */
+    #inicio {
+      padding: 50px;
+      background-color: #BCE5F5;
+      text-align: center;
+    }
+
+    #inicio img {
+      width: 150px; /* Cambiar el ancho de la imagen según tu preferencia */
+      height: 150px; /* Cambiar la altura de la imagen según tu preferencia */
+      border-radius: 50%; /* Opcional: agregar bordes redondeados a la imagen */
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+
+    /* Estilos para la sección de habilidades */
+    #habilidades {
+      padding: 50px;
+      background-color: #BCE5F5;
+    }
+
+    /* Estilos para la lista de habilidades */
+    #habilidades ul {
+      list-style-type: none;
+    }
+
+    /* Estilos para la sección de proyectos */
+    #proyectos {
+      padding: 50px;
+      background-color: #BCE5F5;
+    }
+
+    /* Estilos para la lista de proyectos */
+    #proyectos ul {
+      list-style-type: none;
+    }
+
+    /* Estilos para la sección de contacto */
+    #contacto {
+      padding: 50px;
+      background-color: #BCE5F5;
+    }
+
+    /* Estilos para la lista de contacto */
+    #contacto ul {
+      list-style-type: none;
+    }
+
+    /* Estilos generales para los párrafos y listas */
+    p, ul {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    p {
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Estilos para los elementos de lista */
+    li {
+      display: inline; /* Cambia a "inline-block" si quieres que tengan un ancho fijo */
+      margin-right: 10px; /* Espaciado entre los elementos de lista */
+    }
+  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Mi Portafolio</h1>
-        <section id="about">
-            <img src="https://cdn.pixabay.com/photo/2018/06/27/17/48/fantasy-3502188_960_720.jpg" alt="imagen de cabecera">
-            <h2>Sobre Mí</h2>
-            <p>Soy un apasionado diseñador web y amante de la creatividad. He trabajado en proyectos emocionantes y siempre estoy buscando aprender y crecer en mi campo.</p>
-        </section>
-        <section id="projects">
-            <h2>Proyectos Destacados</h2>
-            <!-- Aquí puedes agregar tus proyectos -->
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Puedes encontrarme en <a href="mailto:tu@email.com">tu@email.com</a></p>
-        </section>
-    </div>
+  <!-- Sección de inicio -->
+  <section id="inicio">
+    <img src="https://cdn.pixabay.com/photo/2018/06/27/17/48/fantasy-3502188_960_720.jpg" alt="Imagen de cabecera">
+    <h1>Diego Martin Caballero Manzanares</h1>
+    <p>Programador web apasionado iniciando mi carrera. Habilidades en HTML, CSS, JavaScript. foco y eficacia.</p>
+    <ul>
+        <!-- Enlaces a redes sociales -->
+        <li><a href="https://www.facebook.com/diegomartin.caballero/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/diego.martin.caballero/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/diego-martin-caballero-manzanares-333a23209/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/diegouru91" target="_blank">GitHub</a></li>
+        <!-- Agrega más enlaces a tus redes sociales aquí -->
+    </ul>
+  </section>
+
+  <!-- Sección de habilidades -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+      <li>Nombre del Proyecto 1</li>
+      <li>Nombre del Proyecto 2</li>
+      <li>Nombre del Proyecto 3</li>
+      <!-- Puedes agregar más proyectos aquí -->
+    </ul>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través de los siguientes medios:</p>
+    <ul>
+        <li>email: caballeromanzanaresdiegomartin@gmail.com</li>
+        <li>whatsapp: +39 379 159 9511</li>
+    </ul>
+  </section>
+
+  <!-- Puedes agregar más secciones según tus necesidades -->
 </body>
-</html>
+
+
