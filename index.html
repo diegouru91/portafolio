@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Ejemplo de HTML y CSS</title>
+    <title>Mi Portafolio</title>
+    <style>
+        /* Estilos CSS (puedes personalizarlos según tus preferencias) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: red;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+
+        #about img {
+        max-width: 150px; /* La imagen no será más ancha que su contenedor */
+        height: 150px; /* Esto mantiene la proporción original */
+        border-radius: 50%;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mi Página Web</h1>
-    <p>¡Hola, mundo! Esto es un ejemplo de cómo combinar HTML y CSS.</p>
+    <div class="container">
+        <h1>Mi Portafolio</h1>
+        <section id="about">
+            <img src="https://cdn.pixabay.com/photo/2018/06/27/17/48/fantasy-3502188_960_720.jpg" alt="imagen de cabecera">
+            <h2>Sobre Mí</h2>
+            <p>Soy un apasionado diseñador web y amante de la creatividad. He trabajado en proyectos emocionantes y siempre estoy buscando aprender y crecer en mi campo.</p>
+        </section>
+        <section id="projects">
+            <h2>Proyectos Destacados</h2>
+            <!-- Aquí puedes agregar tus proyectos -->
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarme en <a href="mailto:tu@email.com">tu@email.com</a></p>
+        </section>
+    </div>
 </body>
 </html>
